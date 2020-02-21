@@ -57,7 +57,7 @@ def get_abstract(pmid):         #returns a list of PMID- unique ids of pubmed ar
 
 
     #from the xml data extract only articlews with abstract  and ignore the rest, there is many other information such as
-    # author names,...but now am only interested in getting the document id (pmid), title and abstract
+    # author names,...but now am only interested in getting the document id (pmid), title and abstract if abstract is not available, return abstract=title
 
     abstracts = [pubmed_article['MedlineCitation']['Article']['Abstract']['AbstractText'][0] if 'Abstract' in
                 pubmed_article['MedlineCitation']['Article'].keys() else pubmed_article['MedlineCitation']['Article']['ArticleTitle']
