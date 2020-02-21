@@ -1,3 +1,5 @@
+*How to extract articles and their abstracts from PubMed database*
+
 Here I share the code for getting PubMed articles.
 Mainly I am interested in the PubMed ID (pmid), title and abstract.
 The code can be slightly modified to fetch more information such as author names and affiliations among other information depending on your needs.
