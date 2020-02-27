@@ -14,7 +14,7 @@ import sys
 
 def search(query,retstart=5,sort="pub+date", mindate="2010/01/01", maxdate="2019/9/27", retmax=100):       #define your desired date range, retmax= number of
                                                                         #documents to fetch each time
-    Entrez.email = 'ffaith2010@gmail.com'                #input your email here
+    Entrez.email = 'xxxxx'                #input your email here
     handle = Entrez.esearch(db='pubmed',              #the esearch is a search function  #db specifies the Entrez databases name e.g., PubMEd
                             retmax=retmax,              # the details about the parameters can be found at  the url belpw
                             retmode='xml',      #https://www.ncbi.nlm.nih.gov/books/NBK25499/#chapter4.ESearch
